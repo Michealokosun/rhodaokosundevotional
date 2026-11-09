@@ -699,5 +699,15 @@ footer .back-top {
 .instagram-icon{display:inline-block!important;width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;object-fit:contain;vertical-align:middle;flex:0 0 20px;margin-right:7px}
 .social-links a,.author-copy .text-link{display:inline-flex;align-items:center}
 .testimony-layout{width:100%;max-width:1050px;margin:0 auto;display:flex;justify-content:center}
-.testimony-form{width:100%;max-width:760px}
+.testimony-form{width:100%;max-width:620px}
+.testimony-form label,.testimony-form input,.testimony-form textarea,.testimony-form input::placeholder,.testimony-form textarea::placeholder{font-family:"DM Sans",sans-serif;font-size:13px;letter-spacing:normal}
+.testimony-form label{font-weight:600}
+.testimony-form input::placeholder,.testimony-form textarea::placeholder{font-weight:400;color:#968a98;opacity:1}
+.submit-spinner{display:inline-block;width:13px;height:13px;margin-left:5px;vertical-align:-2px;border:2px solid rgba(255,255,255,.45);border-top-color:#fff;border-radius:50%;animation:submit-spin .7s linear infinite}
+.form-note[data-state="pending"]{color:var(--plum)}
+.form-note[data-state="success"]{color:#28704b}
+.form-note[data-state="error"]{color:#a12c3a}
+@keyframes submit-spin{to{transform:rotate(360deg)}}
 @media(max-width:760px){.author-photo{width:min(100%,255px);justify-self:center}.testimony-layout{max-width:100%}.testimony-form{max-width:100%}}
+@media(prefers-reduced-motion:reduce){.submit-spinner{animation-duration:2s}}
+
