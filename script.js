@@ -60,6 +60,7 @@ const downloadNote = document.querySelector("#download-note");
 function showDownloadCount(value) {
   countNodes.forEach((node) => {
     node.textContent = Number(value).toLocaleString();
+    node.dataset.countState = "ready";
   });
 }
 
@@ -70,6 +71,10 @@ fetch("/api/downloads")
   })
   .then((data) => showDownloadCount(data.downloads))
   .catch(() => {
+    countNodes.forEach((node) => {
+      node.textContent = "—";
+      node.dataset.countState = "unavailable";
+    });
     if (downloadNote) {
       downloadNote.textContent = "Download count will appear when the site database is connected.";
     }
