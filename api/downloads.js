@@ -1,5 +1,5 @@
 const DOWNLOAD_COUNT_KEY = "called-for-more:downloads";
-const STARTING_COUNT = 50;
+const STARTING_COUNT = 20;
 
 // Initialize the counter once, then increment atomically to avoid lost updates
 // when several readers download at the same time.

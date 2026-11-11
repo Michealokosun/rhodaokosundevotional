@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  padding: 32px 16px;
+  background: #fbf7fc;
+  color: #241a25;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email-shell {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.email-card {
+  overflow: hidden;
+  border: 1px solid #eadfea;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.email-header {
+  padding: 28px 32px;
+  background: #260b2d;
+  color: #ffffff;
+}
+
+.eyebrow {
+  margin: 0 0 9px;
+  color: #e3c982;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.email-header h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 1.3;
+}
+
+.header-caption {
+  margin: 9px 0 0;
+  color: #e1d6e3;
+  font-size: 13px;
+}
+
+.email-content {
+  padding: 30px 32px;
+}
+
+.section-label {
+  margin: 0 0 7px;
+  color: #766c79;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.reader-name {
+  margin: 0;
+  color: #54105f;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.story-label {
+  margin-top: 25px;
+}
+
+.story-card {
+  padding: 19px 20px;
+  border-left: 3px solid #c99a46;
+  border-radius: 4px;
+  background: #f5edf6;
+}
+
+.story-text {
+  margin: 0;
+  color: #49354d;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.email-meta {
+  margin-top: 23px;
+  color: #8a7d8b;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.email-meta p {
+  margin: 3px 0;
+}
+
+.email-footer {
+  padding: 21px 24px 24px;
+  border-top: 1px solid #eadfea;
+  background: #f5edf6;
+  text-align: center;
+}
+
+.footer-star {
+  color: #c99a46;
+  font-size: 20px;
+}
+
+.footer-title {
+  margin: 4px 0 0;
+  color: #54105f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+}
+
+.footer-subtitle {
+  margin: 5px 0 0;
+  color: #766c79;
+  font-size: 11px;
+}
+
+.footer-link {
+  margin: 14px 0 0;
+  font-size: 12px;
+}
+
+.footer-link a {
+  color: #54105f;
+  text-decoration: none;
+}
+
+.unsubscribe {
+  margin: 17px 0 0;
+  font-size: 10px;
+}
+
+.unsubscribe a {
+  color: #8a7d8b;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 16px 8px;
+  }
+
+  .email-header,
+  .email-content {
+    padding: 24px 20px;
+  }
+
+  .email-header h1 {
+    font-size: 23px;
+  }
+}
